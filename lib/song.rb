@@ -18,8 +18,13 @@ class Song
   
   def self.genre_count
     h = Hash.new(0)
-    @@genres.each { |v| h[v] +=1 }
+    @@genres.each { |g| h[g] +=1 }
     h
+  end
+  
+  def self.artist_count
+    h = Hash.new(0)
+    @@artists.each { |v| h[v] +=1 }
   end
   
   attr_accessor :name, :artist, :genre
