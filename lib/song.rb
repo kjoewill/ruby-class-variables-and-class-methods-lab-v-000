@@ -2,6 +2,7 @@ class Song
   
   @@count = 0
   @@genres = Set.new
+  @@artists = Set.new
   
   def self.count
     @@count
@@ -18,6 +19,7 @@ class Song
     @artist = artist
     @genre = genre
     @@genres << genre
+    @@artists << artist
   end
   
 end
