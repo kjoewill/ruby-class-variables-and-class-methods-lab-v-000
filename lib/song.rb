@@ -1,8 +1,8 @@
 class Song 
   
   @@count = 0
-  @@genres = Set.new
-  @@artists = Set.new
+  @@genres = []
+  @@artists = []
   
   def self.count
     @@count
