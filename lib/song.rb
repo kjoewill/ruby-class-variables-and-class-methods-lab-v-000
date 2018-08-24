@@ -9,11 +9,11 @@ class Song
   end
   
   def self.generes
-    @@genres
+    @@genres.to_a
   end
   
   def self.artists
-    @@artists
+    @@artists.to_a
   end
   
   attr_accessor :name, :artist, :genre
