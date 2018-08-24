@@ -1,9 +1,13 @@
 class Song 
   
   @@count = 0
+  @@generes = Set.new
   
   def self.count
     @@count
+  end
+  
+  def self.generes
   end
   
   attr_accessor :name, :artist, :genre
