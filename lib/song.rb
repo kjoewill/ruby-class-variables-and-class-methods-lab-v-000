@@ -13,7 +13,7 @@ class Song
   end
   
   def self.artists
-    @@artists.to_a
+    @@artists.uniq
   end
   
   attr_accessor :name, :artist, :genre
