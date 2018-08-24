@@ -1,7 +1,7 @@
 class Song 
   
   @@count = 0
-  @@generes = Set.new
+  @@genres = Set.new
   
   def self.count
     @@count
